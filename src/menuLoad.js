@@ -1,4 +1,4 @@
-export function pageLoad() {
+export function menuLoad() {
   // Create contentDiv if it doesn't exist
   let contentDiv = document.querySelector("#content");
   if (!contentDiv) {
@@ -8,9 +8,14 @@ export function pageLoad() {
 
   // Use innerHTML to insert HTML content
   contentDiv.innerHTML = `
-    <h1>LaBella Pizza</h1>
-    <h3>Since 1988</h3>
-    <h4>The Best Pizza Long Island Has To Offer!</h4>
+    <h1>Menu</h1>
+    <h2>Pizzas</h3>
+    <div id="pizzas">
+        <h4>Margerita</h4>
+        <h4>Napolitano</h4>
+        <h4>Pepperoni</h4>
+        <h4>Proscuitto</h4>
+    </div>
   `;
 
   // Append the contentDiv to body if not already there
