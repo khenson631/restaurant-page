@@ -1,8 +1,22 @@
-body {
-    /* background-color: red; */
+body, #content {
+    justify-items: center;
+}
+
+.pizzaImages {
+    max-height: 350px;
+    width: auto;
 }
 
 #pizzas {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    column-gap: 5em;
+    row-gap: 2em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }
